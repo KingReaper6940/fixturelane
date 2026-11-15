@@ -1,0 +1,31 @@
+Type,Match ID,Leg,Round,Wave,Global slot,Court,Side A,Side B,Bye entrant
+MATCH,m1,1,1,1,1,North court,Birch,Elm,
+MATCH,m2,1,1,1,1,South court,Cedar,Dune,
+BYE,,1,1,,,,,,Alder
+MATCH,m3,1,2,1,2,South court,Alder,Elm,
+MATCH,m4,1,2,1,2,North court,Birch,Cedar,
+BYE,,1,2,,,,,,Dune
+MATCH,m5,1,3,1,3,North court,Alder,Dune,
+MATCH,m6,1,3,1,3,South court,Elm,Cedar,
+BYE,,1,3,,,,,,Birch
+MATCH,m7,1,4,1,4,South court,Alder,Cedar,
+MATCH,m8,1,4,1,4,North court,Dune,Birch,
+BYE,,1,4,,,,,,Elm
+MATCH,m9,1,5,1,5,North court,Alder,Birch,
+MATCH,m10,1,5,1,5,South court,Dune,Elm,
+BYE,,1,5,,,,,,Cedar
+MATCH,m11,2,6,1,6,South court,Elm,Birch,
+MATCH,m12,2,6,1,6,North court,Dune,Cedar,
+BYE,,2,6,,,,,,Alder
+MATCH,m13,2,7,1,7,North court,Elm,Alder,
+MATCH,m14,2,7,1,7,South court,Cedar,Birch,
+BYE,,2,7,,,,,,Dune
+MATCH,m15,2,8,1,8,South court,Dune,Alder,
+MATCH,m16,2,8,1,8,North court,Cedar,Elm,
+BYE,,2,8,,,,,,Birch
+MATCH,m17,2,9,1,9,North court,Cedar,Alder,
+MATCH,m18,2,9,1,9,South court,Birch,Dune,
+BYE,,2,9,,,,,,Elm
+MATCH,m19,2,10,1,10,South court,Birch,Alder,
+MATCH,m20,2,10,1,10,North court,Elm,Dune,
+BYE,,2,10,,,,,,Cedar

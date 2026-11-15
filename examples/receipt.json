@@ -1,0 +1,884 @@
+{
+  "schema": "fixturelane-receipt-v1",
+  "project": {
+    "schema": "fixturelane-project-v1",
+    "title": "Five teams, two courts",
+    "entrantText": "Alder\nBirch\nCedar\nDune\nElm",
+    "courtText": "North court\nSouth court",
+    "legs": 2,
+    "notes": "Fictional fixed teams. Two legs reverse A/B labels. Every round waits for all its waves; review rest, court preferences and local event rules separately."
+  },
+  "scope": "Fixed-entrant pairings and abstract waves only. A/B labels are not a home/away balance guarantee. No dates, match duration, rest standard, result, standings or schedule optimality is inferred.",
+  "schedule": {
+    "schema": "fixturelane-schedule-v1",
+    "entrants": [
+      {
+        "id": "e1",
+        "name": "Alder"
+      },
+      {
+        "id": "e2",
+        "name": "Birch"
+      },
+      {
+        "id": "e3",
+        "name": "Cedar"
+      },
+      {
+        "id": "e4",
+        "name": "Dune"
+      },
+      {
+        "id": "e5",
+        "name": "Elm"
+      }
+    ],
+    "courts": [
+      {
+        "id": "c1",
+        "name": "North court"
+      },
+      {
+        "id": "c2",
+        "name": "South court"
+      }
+    ],
+    "rounds": 10,
+    "wavesPerRound": 1,
+    "totalSlots": 10,
+    "matches": [
+      {
+        "id": "m1",
+        "leg": 1,
+        "roundInLeg": 1,
+        "round": 1,
+        "wave": 1,
+        "slot": 1,
+        "courtId": "c1",
+        "a": "e2",
+        "b": "e5"
+      },
+      {
+        "id": "m2",
+        "leg": 1,
+        "roundInLeg": 1,
+        "round": 1,
+        "wave": 1,
+        "slot": 1,
+        "courtId": "c2",
+        "a": "e3",
+        "b": "e4"
+      },
+      {
+        "id": "m3",
+        "leg": 1,
+        "roundInLeg": 2,
+        "round": 2,
+        "wave": 1,
+        "slot": 2,
+        "courtId": "c2",
+        "a": "e1",
+        "b": "e5"
+      },
+      {
+        "id": "m4",
+        "leg": 1,
+        "roundInLeg": 2,
+        "round": 2,
+        "wave": 1,
+        "slot": 2,
+        "courtId": "c1",
+        "a": "e2",
+        "b": "e3"
+      },
+      {
+        "id": "m5",
+        "leg": 1,
+        "roundInLeg": 3,
+        "round": 3,
+        "wave": 1,
+        "slot": 3,
+        "courtId": "c1",
+        "a": "e1",
+        "b": "e4"
+      },
+      {
+        "id": "m6",
+        "leg": 1,
+        "roundInLeg": 3,
+        "round": 3,
+        "wave": 1,
+        "slot": 3,
+        "courtId": "c2",
+        "a": "e5",
+        "b": "e3"
+      },
+      {
+        "id": "m7",
+        "leg": 1,
+        "roundInLeg": 4,
+        "round": 4,
+        "wave": 1,
+        "slot": 4,
+        "courtId": "c2",
+        "a": "e1",
+        "b": "e3"
+      },
+      {
+        "id": "m8",
+        "leg": 1,
+        "roundInLeg": 4,
+        "round": 4,
+        "wave": 1,
+        "slot": 4,
+        "courtId": "c1",
+        "a": "e4",
+        "b": "e2"
+      },
+      {
+        "id": "m9",
+        "leg": 1,
+        "roundInLeg": 5,
+        "round": 5,
+        "wave": 1,
+        "slot": 5,
+        "courtId": "c1",
+        "a": "e1",
+        "b": "e2"
+      },
+      {
+        "id": "m10",
+        "leg": 1,
+        "roundInLeg": 5,
+        "round": 5,
+        "wave": 1,
+        "slot": 5,
+        "courtId": "c2",
+        "a": "e4",
+        "b": "e5"
+      },
+      {
+        "id": "m11",
+        "leg": 2,
+        "roundInLeg": 1,
+        "round": 6,
+        "wave": 1,
+        "slot": 6,
+        "courtId": "c2",
+        "a": "e5",
+        "b": "e2"
+      },
+      {
+        "id": "m12",
+        "leg": 2,
+        "roundInLeg": 1,
+        "round": 6,
+        "wave": 1,
+        "slot": 6,
+        "courtId": "c1",
+        "a": "e4",
+        "b": "e3"
+      },
+      {
+        "id": "m13",
+        "leg": 2,
+        "roundInLeg": 2,
+        "round": 7,
+        "wave": 1,
+        "slot": 7,
+        "courtId": "c1",
+        "a": "e5",
+        "b": "e1"
+      },
+      {
+        "id": "m14",
+        "leg": 2,
+        "roundInLeg": 2,
+        "round": 7,
+        "wave": 1,
+        "slot": 7,
+        "courtId": "c2",
+        "a": "e3",
+        "b": "e2"
+      },
+      {
+        "id": "m15",
+        "leg": 2,
+        "roundInLeg": 3,
+        "round": 8,
+        "wave": 1,
+        "slot": 8,
+        "courtId": "c2",
+        "a": "e4",
+        "b": "e1"
+      },
+      {
+        "id": "m16",
+        "leg": 2,
+        "roundInLeg": 3,
+        "round": 8,
+        "wave": 1,
+        "slot": 8,
+        "courtId": "c1",
+        "a": "e3",
+        "b": "e5"
+      },
+      {
+        "id": "m17",
+        "leg": 2,
+        "roundInLeg": 4,
+        "round": 9,
+        "wave": 1,
+        "slot": 9,
+        "courtId": "c1",
+        "a": "e3",
+        "b": "e1"
+      },
+      {
+        "id": "m18",
+        "leg": 2,
+        "roundInLeg": 4,
+        "round": 9,
+        "wave": 1,
+        "slot": 9,
+        "courtId": "c2",
+        "a": "e2",
+        "b": "e4"
+      },
+      {
+        "id": "m19",
+        "leg": 2,
+        "roundInLeg": 5,
+        "round": 10,
+        "wave": 1,
+        "slot": 10,
+        "courtId": "c2",
+        "a": "e2",
+        "b": "e1"
+      },
+      {
+        "id": "m20",
+        "leg": 2,
+        "roundInLeg": 5,
+        "round": 10,
+        "wave": 1,
+        "slot": 10,
+        "courtId": "c1",
+        "a": "e5",
+        "b": "e4"
+      }
+    ],
+    "byes": [
+      {
+        "leg": 1,
+        "roundInLeg": 1,
+        "round": 1,
+        "entrantId": "e1"
+      },
+      {
+        "leg": 1,
+        "roundInLeg": 2,
+        "round": 2,
+        "entrantId": "e4"
+      },
+      {
+        "leg": 1,
+        "roundInLeg": 3,
+        "round": 3,
+        "entrantId": "e2"
+      },
+      {
+        "leg": 1,
+        "roundInLeg": 4,
+        "round": 4,
+        "entrantId": "e5"
+      },
+      {
+        "leg": 1,
+        "roundInLeg": 5,
+        "round": 5,
+        "entrantId": "e3"
+      },
+      {
+        "leg": 2,
+        "roundInLeg": 1,
+        "round": 6,
+        "entrantId": "e1"
+      },
+      {
+        "leg": 2,
+        "roundInLeg": 2,
+        "round": 7,
+        "entrantId": "e4"
+      },
+      {
+        "leg": 2,
+        "roundInLeg": 3,
+        "round": 8,
+        "entrantId": "e2"
+      },
+      {
+        "leg": 2,
+        "roundInLeg": 4,
+        "round": 9,
+        "entrantId": "e5"
+      },
+      {
+        "leg": 2,
+        "roundInLeg": 5,
+        "round": 10,
+        "entrantId": "e3"
+      }
+    ]
+  },
+  "checked": true,
+  "stats": {
+    "entrants": 5,
+    "courts": 2,
+    "legs": 2,
+    "rounds": 10,
+    "matches": 20,
+    "byeEntries": 10,
+    "slots": 10,
+    "gamesEach": 8
+  },
+  "pairCoverage": [
+    {
+      "a": "e1",
+      "b": "e2",
+      "matchIds": [
+        "m9",
+        "m19"
+      ]
+    },
+    {
+      "a": "e1",
+      "b": "e3",
+      "matchIds": [
+        "m7",
+        "m17"
+      ]
+    },
+    {
+      "a": "e1",
+      "b": "e4",
+      "matchIds": [
+        "m5",
+        "m15"
+      ]
+    },
+    {
+      "a": "e1",
+      "b": "e5",
+      "matchIds": [
+        "m3",
+        "m13"
+      ]
+    },
+    {
+      "a": "e2",
+      "b": "e3",
+      "matchIds": [
+        "m4",
+        "m14"
+      ]
+    },
+    {
+      "a": "e2",
+      "b": "e4",
+      "matchIds": [
+        "m8",
+        "m18"
+      ]
+    },
+    {
+      "a": "e2",
+      "b": "e5",
+      "matchIds": [
+        "m1",
+        "m11"
+      ]
+    },
+    {
+      "a": "e3",
+      "b": "e4",
+      "matchIds": [
+        "m2",
+        "m12"
+      ]
+    },
+    {
+      "a": "e3",
+      "b": "e5",
+      "matchIds": [
+        "m6",
+        "m16"
+      ]
+    },
+    {
+      "a": "e4",
+      "b": "e5",
+      "matchIds": [
+        "m10",
+        "m20"
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "id": "e1",
+      "name": "Alder",
+      "matches": [
+        {
+          "matchId": "m3",
+          "round": 2,
+          "leg": 1,
+          "wave": 1,
+          "slot": 2,
+          "courtId": "c2",
+          "opponentId": "e5",
+          "side": "A"
+        },
+        {
+          "matchId": "m5",
+          "round": 3,
+          "leg": 1,
+          "wave": 1,
+          "slot": 3,
+          "courtId": "c1",
+          "opponentId": "e4",
+          "side": "A"
+        },
+        {
+          "matchId": "m7",
+          "round": 4,
+          "leg": 1,
+          "wave": 1,
+          "slot": 4,
+          "courtId": "c2",
+          "opponentId": "e3",
+          "side": "A"
+        },
+        {
+          "matchId": "m9",
+          "round": 5,
+          "leg": 1,
+          "wave": 1,
+          "slot": 5,
+          "courtId": "c1",
+          "opponentId": "e2",
+          "side": "A"
+        },
+        {
+          "matchId": "m13",
+          "round": 7,
+          "leg": 2,
+          "wave": 1,
+          "slot": 7,
+          "courtId": "c1",
+          "opponentId": "e5",
+          "side": "B"
+        },
+        {
+          "matchId": "m15",
+          "round": 8,
+          "leg": 2,
+          "wave": 1,
+          "slot": 8,
+          "courtId": "c2",
+          "opponentId": "e4",
+          "side": "B"
+        },
+        {
+          "matchId": "m17",
+          "round": 9,
+          "leg": 2,
+          "wave": 1,
+          "slot": 9,
+          "courtId": "c1",
+          "opponentId": "e3",
+          "side": "B"
+        },
+        {
+          "matchId": "m19",
+          "round": 10,
+          "leg": 2,
+          "wave": 1,
+          "slot": 10,
+          "courtId": "c2",
+          "opponentId": "e2",
+          "side": "B"
+        }
+      ],
+      "byeRounds": [
+        1,
+        6
+      ],
+      "minIdleSlots": 0
+    },
+    {
+      "id": "e2",
+      "name": "Birch",
+      "matches": [
+        {
+          "matchId": "m1",
+          "round": 1,
+          "leg": 1,
+          "wave": 1,
+          "slot": 1,
+          "courtId": "c1",
+          "opponentId": "e5",
+          "side": "A"
+        },
+        {
+          "matchId": "m4",
+          "round": 2,
+          "leg": 1,
+          "wave": 1,
+          "slot": 2,
+          "courtId": "c1",
+          "opponentId": "e3",
+          "side": "A"
+        },
+        {
+          "matchId": "m8",
+          "round": 4,
+          "leg": 1,
+          "wave": 1,
+          "slot": 4,
+          "courtId": "c1",
+          "opponentId": "e4",
+          "side": "B"
+        },
+        {
+          "matchId": "m9",
+          "round": 5,
+          "leg": 1,
+          "wave": 1,
+          "slot": 5,
+          "courtId": "c1",
+          "opponentId": "e1",
+          "side": "B"
+        },
+        {
+          "matchId": "m11",
+          "round": 6,
+          "leg": 2,
+          "wave": 1,
+          "slot": 6,
+          "courtId": "c2",
+          "opponentId": "e5",
+          "side": "B"
+        },
+        {
+          "matchId": "m14",
+          "round": 7,
+          "leg": 2,
+          "wave": 1,
+          "slot": 7,
+          "courtId": "c2",
+          "opponentId": "e3",
+          "side": "B"
+        },
+        {
+          "matchId": "m18",
+          "round": 9,
+          "leg": 2,
+          "wave": 1,
+          "slot": 9,
+          "courtId": "c2",
+          "opponentId": "e4",
+          "side": "A"
+        },
+        {
+          "matchId": "m19",
+          "round": 10,
+          "leg": 2,
+          "wave": 1,
+          "slot": 10,
+          "courtId": "c2",
+          "opponentId": "e1",
+          "side": "A"
+        }
+      ],
+      "byeRounds": [
+        3,
+        8
+      ],
+      "minIdleSlots": 0
+    },
+    {
+      "id": "e3",
+      "name": "Cedar",
+      "matches": [
+        {
+          "matchId": "m2",
+          "round": 1,
+          "leg": 1,
+          "wave": 1,
+          "slot": 1,
+          "courtId": "c2",
+          "opponentId": "e4",
+          "side": "A"
+        },
+        {
+          "matchId": "m4",
+          "round": 2,
+          "leg": 1,
+          "wave": 1,
+          "slot": 2,
+          "courtId": "c1",
+          "opponentId": "e2",
+          "side": "B"
+        },
+        {
+          "matchId": "m6",
+          "round": 3,
+          "leg": 1,
+          "wave": 1,
+          "slot": 3,
+          "courtId": "c2",
+          "opponentId": "e5",
+          "side": "B"
+        },
+        {
+          "matchId": "m7",
+          "round": 4,
+          "leg": 1,
+          "wave": 1,
+          "slot": 4,
+          "courtId": "c2",
+          "opponentId": "e1",
+          "side": "B"
+        },
+        {
+          "matchId": "m12",
+          "round": 6,
+          "leg": 2,
+          "wave": 1,
+          "slot": 6,
+          "courtId": "c1",
+          "opponentId": "e4",
+          "side": "B"
+        },
+        {
+          "matchId": "m14",
+          "round": 7,
+          "leg": 2,
+          "wave": 1,
+          "slot": 7,
+          "courtId": "c2",
+          "opponentId": "e2",
+          "side": "A"
+        },
+        {
+          "matchId": "m16",
+          "round": 8,
+          "leg": 2,
+          "wave": 1,
+          "slot": 8,
+          "courtId": "c1",
+          "opponentId": "e5",
+          "side": "A"
+        },
+        {
+          "matchId": "m17",
+          "round": 9,
+          "leg": 2,
+          "wave": 1,
+          "slot": 9,
+          "courtId": "c1",
+          "opponentId": "e1",
+          "side": "A"
+        }
+      ],
+      "byeRounds": [
+        5,
+        10
+      ],
+      "minIdleSlots": 0
+    },
+    {
+      "id": "e4",
+      "name": "Dune",
+      "matches": [
+        {
+          "matchId": "m2",
+          "round": 1,
+          "leg": 1,
+          "wave": 1,
+          "slot": 1,
+          "courtId": "c2",
+          "opponentId": "e3",
+          "side": "B"
+        },
+        {
+          "matchId": "m5",
+          "round": 3,
+          "leg": 1,
+          "wave": 1,
+          "slot": 3,
+          "courtId": "c1",
+          "opponentId": "e1",
+          "side": "B"
+        },
+        {
+          "matchId": "m8",
+          "round": 4,
+          "leg": 1,
+          "wave": 1,
+          "slot": 4,
+          "courtId": "c1",
+          "opponentId": "e2",
+          "side": "A"
+        },
+        {
+          "matchId": "m10",
+          "round": 5,
+          "leg": 1,
+          "wave": 1,
+          "slot": 5,
+          "courtId": "c2",
+          "opponentId": "e5",
+          "side": "A"
+        },
+        {
+          "matchId": "m12",
+          "round": 6,
+          "leg": 2,
+          "wave": 1,
+          "slot": 6,
+          "courtId": "c1",
+          "opponentId": "e3",
+          "side": "A"
+        },
+        {
+          "matchId": "m15",
+          "round": 8,
+          "leg": 2,
+          "wave": 1,
+          "slot": 8,
+          "courtId": "c2",
+          "opponentId": "e1",
+          "side": "A"
+        },
+        {
+          "matchId": "m18",
+          "round": 9,
+          "leg": 2,
+          "wave": 1,
+          "slot": 9,
+          "courtId": "c2",
+          "opponentId": "e2",
+          "side": "B"
+        },
+        {
+          "matchId": "m20",
+          "round": 10,
+          "leg": 2,
+          "wave": 1,
+          "slot": 10,
+          "courtId": "c1",
+          "opponentId": "e5",
+          "side": "B"
+        }
+      ],
+      "byeRounds": [
+        2,
+        7
+      ],
+      "minIdleSlots": 0
+    },
+    {
+      "id": "e5",
+      "name": "Elm",
+      "matches": [
+        {
+          "matchId": "m1",
+          "round": 1,
+          "leg": 1,
+          "wave": 1,
+          "slot": 1,
+          "courtId": "c1",
+          "opponentId": "e2",
+          "side": "B"
+        },
+        {
+          "matchId": "m3",
+          "round": 2,
+          "leg": 1,
+          "wave": 1,
+          "slot": 2,
+          "courtId": "c2",
+          "opponentId": "e1",
+          "side": "B"
+        },
+        {
+          "matchId": "m6",
+          "round": 3,
+          "leg": 1,
+          "wave": 1,
+          "slot": 3,
+          "courtId": "c2",
+          "opponentId": "e3",
+          "side": "A"
+        },
+        {
+          "matchId": "m10",
+          "round": 5,
+          "leg": 1,
+          "wave": 1,
+          "slot": 5,
+          "courtId": "c2",
+          "opponentId": "e4",
+          "side": "B"
+        },
+        {
+          "matchId": "m11",
+          "round": 6,
+          "leg": 2,
+          "wave": 1,
+          "slot": 6,
+          "courtId": "c2",
+          "opponentId": "e2",
+          "side": "A"
+        },
+        {
+          "matchId": "m13",
+          "round": 7,
+          "leg": 2,
+          "wave": 1,
+          "slot": 7,
+          "courtId": "c1",
+          "opponentId": "e1",
+          "side": "A"
+        },
+        {
+          "matchId": "m16",
+          "round": 8,
+          "leg": 2,
+          "wave": 1,
+          "slot": 8,
+          "courtId": "c1",
+          "opponentId": "e3",
+          "side": "B"
+        },
+        {
+          "matchId": "m20",
+          "round": 10,
+          "leg": 2,
+          "wave": 1,
+          "slot": 10,
+          "courtId": "c1",
+          "opponentId": "e4",
+          "side": "A"
+        }
+      ],
+      "byeRounds": [
+        4,
+        9
+      ],
+      "minIdleSlots": 0
+    }
+  ]
+}
