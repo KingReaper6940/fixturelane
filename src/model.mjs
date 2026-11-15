@@ -1,6 +1,6 @@
 export const SCHEMA = 'fixturelane-project-v1';
 export function text(value,max,name,multi=false){
- if(typeof value!=='string'||value.length>max||/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/.test(value)||(!multi&&/[\r\n\t]/.test(value))||[...value].some(c=>c.length===1&&c.charCodeAt(0)>=0xd800&&c.charCodeAt(0)<=0xdfff))throw Error('Invalid '+name+' (maximum '+max+' code units).');
+ if(typeof value!=='string'||value.length>max||/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f\ufffe\uffff]/.test(value)||(!multi&&/[\r\n\t]/.test(value))||[...value].some(c=>c.length===1&&c.charCodeAt(0)>=0xd800&&c.charCodeAt(0)<=0xdfff))throw Error('Invalid '+name+' (maximum '+max+' code units).');
 }
 export function names(source,max,name){
  text(source,4000,name,true);

@@ -123,7 +123,7 @@ A/B are labels, not a home/away balance guarantee. If they represent home/away f
 - Each parsed label: 64 UTF-16 code units; each raw label list: 4,000.
 - Title: 80 code units; notes: 1,000.
 - Project file: at most 600,000 bytes and 150,000 decoded code units, strict UTF-8 with optional leading BOM.
-- Project schema is validated before replacement. Duplicate JSON property names follow ordinary JSON parser behavior.
+- Project schema is validated before replacement. Unsafe controls, unpaired surrogates and XML-invalid U+FFFE/U+FFFF are rejected so labels remain exportable as SVG. Duplicate JSON property names follow ordinary JSON parser behavior.
 
 Input order determines the draw; there is no shuffle or random-seeding claim. Generated IDs identify positions within that draw and should not be treated as permanent identities across roster changes.
 
@@ -145,9 +145,9 @@ CSV prefixes label cells beginning with optional whitespace then `=`, `+`, `-` o
 
 ## Verification
 
-22 automated checks include exhaustive coverage of all **552 combinations** of 2–24 entrants, 1–12 courts and one/two legs, with independently constructed expected unordered pairs and occupancy sets. Deliberately damaged schedules test rejection of missing matches/byes, self-matches, court collisions, invalid placement/IDs, source-label mismatches and unreversed second-leg sides.
+23 automated checks include exhaustive coverage of all **552 combinations** of 2–24 entrants, 1–12 courts and one/two legs, with independently constructed expected unordered pairs and occupancy sets. Deliberately damaged schedules test rejection of missing matches/byes, self-matches, court collisions, invalid placement/IDs, source-label mismatches and unreversed second-leg sides.
 
-Other checks cover surplus courts, a real entrant named BYE, complete itineraries, deterministic regeneration, strict bounds/UTF-8, history, literal HTML/SVG escaping and actual downloaded Blob contents. UI checks cover atomic errors, filter/bye semantics, full exports despite filtering, pagination, stale file reads and preservation of original source text. CI runs on Windows/Linux with Node 22/24.
+Other checks cover surplus courts, a real entrant named BYE, complete itineraries, deterministic regeneration, strict bounds/UTF-8, XML-invalid character rejection, history, literal HTML/SVG escaping and actual downloaded Blob contents. UI checks cover atomic errors, filter/bye semantics, full exports despite filtering, pagination, stale file reads and preservation of original source text. CI runs on Windows/Linux with Node 22/24.
 
 UI tests use **jsdom, a simulated DOM**. Native-browser interaction, responsive appearance, assistive-technology use, native download destinations, physical printing and an actual application screenshot have not been verified. Responsive CSS, semantic tables/forms and visible focus states are implemented; visual/accessibility certification is not claimed.
 
