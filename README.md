@@ -2,6 +2,8 @@
 
 **Every pairing, accounted for.**
 
+[Open Fixturelane](https://fixturelane.vercel.app) · [Automated checks](https://github.com/KingReaper6940/fixturelane/actions/workflows/checks.yml)
+
 Generate checked single or double round-robin fixtures for players or fixed teams. Place each round on your courts in sequential waves, inspect whole-round byes and take the complete schedule with you.
 
 ![Actual exported preview of the fictional five-team example](examples/summary.svg)
@@ -117,7 +119,7 @@ A/B are labels, not a home/away balance guarantee. If they represent home/away f
 ## Limits
 
 - 2–24 entrants; 1–12 courts; one or two legs.
-- At most 552 matches, 48 bye entries and 46 rounds.
+- At most 552 matches, 46 bye entries and 46 rounds.
 - Each parsed label: 64 UTF-16 code units; each raw label list: 4,000.
 - Title: 80 code units; notes: 1,000.
 - Project file: at most 600,000 bytes and 150,000 decoded code units, strict UTF-8 with optional leading BOM.
