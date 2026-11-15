@@ -1,0 +1,3 @@
+import {parseProject} from './model.mjs';
+export async function readProject(file){if(!file||file.size>600000)throw Error('Choose a project JSON no larger than 600 KB.');const source=new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(new Uint8Array(await file.arrayBuffer()));return parseProject(source);}
+export function downloads(doc){const urls=[];return {save(text,type,name){const blob=new Blob([text],{type}),url=URL.createObjectURL(blob);urls.push(url);const a=doc.createElement('a');a.href=url;a.download=name;doc.body.append(a);a.click();a.remove();return blob},clear(){for(const url of urls.splice(0))URL.revokeObjectURL(url)}}}
